@@ -1,8 +1,27 @@
 aid: mercanis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mercanis.png
 name: Mercanis
-description: 'Mercanis is a company surfaced as a portfolio company of partech, speedinvest and added
-  to the API Evangelist network as a stub for enrichment. Sector: Applicative SaaS. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Mercanis is an AI-powered procurement platform that automates the end-to-end
+  source-to-contract lifecycle for enterprise procurement teams. It combines structured
+  intake, connected sourcing (RFx and supplier comparison), supplier relationship management,
+  contract lifecycle management, and risk, compliance and spend analytics, coordinated
+  by a large fleet of autonomous AI agents. Mercanis serves sectors including energy
+  and utilities, pharma and chemicals, automotive, consumer goods, manufacturing, and
+  construction, and integrates with ERP systems such as SAP and NetSuite alongside procurement
+  networks like Unite. The company is headquartered in Germany with SOC-certified, GDPR-compliant
+  infrastructure. No public developer API, documentation, or /.well-known discovery surface
+  has been identified as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/mercanis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Applicative Saas
+- Procurement
+- Sourcing
+- Supplier Management
+- Contract Management
+- Spend Analytics
+- Source-to-Contract
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +50,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mercanis-domain-security.yml
 - type: Website
   url: https://www.mercanis.com/
+- type: Blog
+  url: https://www.mercanis.com/blog-overview
+- type: Support
+  url: https://www.mercanis.com/contact
+- type: PrivacyPolicy
+  url: https://www.mercanis.com/privacy-policy
+- type: TermsOfService
+  url: https://www.mercanis.com/terms-and-conditions-for-customers
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
